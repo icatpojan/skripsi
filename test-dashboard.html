@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Dashboard User</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <style>
+        /* Modal blur effect */
+        .modal-backdrop {
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        .modal {
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+        }
+
+        .modal-content {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border: none;
+            border-radius: 15px;
+        }
+
+        .modal-header {
+            border-bottom: 1px solid #e9ecef;
+            border-radius: 15px 15px 0 0;
+        }
+
+        .modal-footer {
+            border-top: 1px solid #e9ecef;
+            border-radius: 0 0 15px 15px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Test Dashboard User</h1>
+        <p>Ini adalah halaman test untuk memastikan semua fitur dashboard user berfungsi.</p>
+
+        <div class="row">
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-success btn-block btn-lg" onclick="openReportModal()">
+                    <i class="fas fa-plus mr-2"></i>Laporkan Sampah
+                </button>
+            </div>
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-info btn-block btn-lg" onclick="openMapModal()">
+                    <i class="fas fa-map-marker-alt mr-2"></i>Lihat Peta
+                </button>
+            </div>
+            <div class="col-md-4 mb-3">
+                <button class="btn btn-primary btn-block btn-lg" onclick="openProfileModal()">
+                    <i class="fas fa-user mr-2"></i>Profile Saya
+                </button>
+            </div>
+        </div>
+
+        <div class="alert alert-info">
+            <h5>Debug Info:</h5>
+            <div id="debug-info">Menunggu...</div>
+        </div>
+    </div>
+
+    <!-- Modal Laporkan Sampah -->
+    <div class="modal fade" id="reportModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-plus mr-2"></i>Laporkan Sampah
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <form id="reportForm" enctype="multipart/form-data">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="title">Judul Laporan *</label>
+                                    <input type="text" class="form-control" id="title" name="title" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="waste_type_id">Jenis Sampah</label>
+                                    <select class="form-control" id="waste_type_id" name="waste_type_id">
+                                        <option value="">Pilih Jenis Sampah</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="description">Deskripsi *</label>
+                            <textarea class="form-control" id="description" name="description" rows="3"
+                                required></textarea>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="latitude">Latitude *</label>
+                                    <input type="number" step="any" class="form-control" id="latitude" name="latitude"
+                                        required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="longitude">Longitude *</label>
+                                    <input type="number" step="any" class="form-control" id="longitude" name="longitude"
+                                        required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Alamat</label>
+                            <input type="text" class="form-control" id="address" name="address">
+                        </div>
+                        <div class="form-group">
+                            <label for="image">Foto Sampah *</label>
+                            <input type="file" class="form-control-file" id="image" name="image" accept="image/*"
+                                required>
+                            <small class="form-text text-muted">Format: JPG, PNG, GIF. Maksimal 2MB.</small>
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-info btn-sm" onclick="getCurrentLocation()">
+                                <i class="fas fa-map-marker-alt mr-1"></i>Ambil Lokasi Saat Ini
+                            </button>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                        <button type="submit" class="btn btn-success">
+                            <i class="fas fa-paper-plane mr-1"></i>Kirim Laporan
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Peta -->
+    <div class="modal fade" id="mapModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-map mr-2"></i>Peta Laporan Sampah
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div id="map" style="height: 500px; width: 100%;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Profile -->
+    <div class="modal fade" id="profileModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <i class="fas fa-user mr-2"></i>Profile Saya
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <form id="profileForm">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="profile_name">Nama Lengkap *</label>
+                            <input type="text" class="form-control" id="profile_name" name="name" value="Test User"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="profile_username">Username *</label>
+                            <input type="text" class="form-control" id="profile_username" name="username"
+                                value="testuser" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="profile_email">Email *</label>
+                            <input type="email" class="form-control" id="profile_email" name="email"
+                                value="test@example.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="profile_phone">Nomor Telepon *</label>
+                            <input type="text" class="form-control" id="profile_phone" name="phone" value="08123456789"
+                                required>
+                        </div>
+                        <div class="form-group">
+                            <label for="profile_address">Alamat *</label>
+                            <textarea class="form-control" id="profile_address" name="address" rows="3"
+                                required>Jl. Test No. 123</textarea>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-save mr-1"></i>Simpan Perubahan
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
+    <script>
+        let map;
+        let markers = [];
+
+        // Debug info
+        function updateDebugInfo(message) {
+            $('#debug-info').html(message);
+            console.log(message);
+        }
+
+        // Fungsi untuk membuka modal laporan
+        function openReportModal() {
+            $('#reportModal').modal('show');
+            loadWasteTypes();
+            updateDebugInfo('Modal laporan dibuka');
+        }
+
+        // Fungsi untuk membuka modal peta
+        function openMapModal() {
+            $('#mapModal').modal('show');
+            setTimeout(() => {
+                initMap();
+            }, 500);
+            updateDebugInfo('Modal peta dibuka');
+        }
+
+        // Fungsi untuk membuka modal profile
+        function openProfileModal() {
+            $('#profileModal').modal('show');
+            updateDebugInfo('Modal profile dibuka');
+        }
+
+        // Load waste types
+        function loadWasteTypes() {
+            updateDebugInfo('Loading waste types...');
+
+            // Simulasi data waste types untuk testing
+            const mockData = [{
+                    id: 1,
+                    name: 'Sampah Organik'
+                },
+                {
+                    id: 2,
+                    name: 'Sampah Anorganik'
+                },
+                {
+                    id: 3,
+                    name: 'Sampah B3'
+                },
+                {
+                    id: 4,
+                    name: 'Sampah Elektronik'
+                },
+                {
+                    id: 5,
+                    name: 'Sampah Konstruksi'
+                },
+                {
+                    id: 6,
+                    name: 'Sampah Lainnya'
+                }
+            ];
+
+            let options = '<option value="">Pilih Jenis Sampah</option>';
+            mockData.forEach(function (type) {
+                options += `<option value="${type.id}">${type.name}</option>`;
+            });
+            $("#waste_type_id").html(options);
+            updateDebugInfo('Waste types loaded: ' + mockData.length + ' items');
+        }
+
+        // Get current location
+        function getCurrentLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(
+                    function (position) {
+                        $("#latitude").val(position.coords.latitude);
+                        $("#longitude").val(position.coords.longitude);
+                        updateDebugInfo('Location obtained: ' + position.coords.latitude + ', ' + position.coords
+                            .longitude);
+                    },
+                    function (error) {
+                        updateDebugInfo('Location error: ' + error.message);
+                        alert("Tidak dapat mendapatkan lokasi: " + error.message);
+                    }
+                );
+            } else {
+                updateDebugInfo('Geolocation not supported');
+                alert("Geolokasi tidak didukung oleh browser ini.");
+            }
+        }
+
+        // Initialize map
+        function initMap() {
+            if (map) {
+                map.remove();
+            }
+
+            map = L.map('map').setView([-6.2088, 106.8456], 10);
+
+            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                attribution: '© OpenStreetMap contributors'
+            }).addTo(map);
+
+            updateDebugInfo('Map initialized');
+        }
+
+        // Form submissions
+        $('#reportForm').on('submit', function (e) {
+            e.preventDefault();
+            updateDebugInfo('Report form submitted (simulated)');
+            alert('Form laporan berhasil disubmit! (Simulasi)');
+            $('#reportModal').modal('hide');
+        });
+
+        $('#profileForm').on('submit', function (e) {
+            e.preventDefault();
+            updateDebugInfo('Profile form submitted (simulated)');
+            alert('Profile berhasil diupdate! (Simulasi)');
+            $('#profileModal').modal('hide');
+        });
+
+        // Modal events
+        $(document).ready(function () {
+            updateDebugInfo('Page loaded successfully');
+
+            $('#reportModal').on('shown.bs.modal', function () {
+                loadWasteTypes();
+            });
+
+            $('#reportModal').on('hidden.bs.modal', function () {
+                $('#reportForm')[0].reset();
+                updateDebugInfo('Report modal closed, form reset');
+            });
+        });
+
+    </script>
+</body>
+
+</html>

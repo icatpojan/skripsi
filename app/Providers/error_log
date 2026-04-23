@@ -1,0 +1,40 @@
+[05-Feb-2026 21:48:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Support\Providers\AuthServiceProvider' not found in /home/pron7255/public_html/app/Providers/AuthServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/Providers/AuthServiceProvider.php on line 8
+[05-Feb-2026 21:49:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\ServiceProvider' not found in /home/pron7255/public_html/app/Providers/BroadcastServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/Providers/BroadcastServiceProvider.php on line 8
+[05-Feb-2026 22:03:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Support\Providers\EventServiceProvider' not found in /home/pron7255/public_html/app/Providers/EventServiceProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/Providers/EventServiceProvider.php on line 10
+[05-Feb-2026 22:07:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Support\Providers\RouteServiceProvider' not found in /home/pron7255/public_html/app/Providers/RouteServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/Providers/RouteServiceProvider.php on line 8
+[05-Feb-2026 22:19:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\ServiceProvider' not found in /home/pron7255/public_html/app/Providers/AppServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/Providers/AppServiceProvider.php on line 7
+[06-Feb-2026 07:12:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Support\Providers\AuthServiceProvider' not found in /home/pron7255/public_html/app/Providers/AuthServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/Providers/AuthServiceProvider.php on line 8
+[06-Feb-2026 07:12:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\ServiceProvider' not found in /home/pron7255/public_html/app/Providers/BroadcastServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/Providers/BroadcastServiceProvider.php on line 8
+[06-Feb-2026 07:13:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Support\Providers\RouteServiceProvider' not found in /home/pron7255/public_html/app/Providers/RouteServiceProvider.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/Providers/RouteServiceProvider.php on line 8
+[06-Feb-2026 07:14:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Support\Providers\EventServiceProvider' not found in /home/pron7255/public_html/app/Providers/EventServiceProvider.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/Providers/EventServiceProvider.php on line 10
+[06-Feb-2026 07:15:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Support\ServiceProvider' not found in /home/pron7255/public_html/app/Providers/AppServiceProvider.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/Providers/AppServiceProvider.php on line 7

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Form Submission</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .debug-info {
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 20px 0;
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>Test Form Submission</h1>
+        <p>Test form untuk memastikan AJAX submission bekerja dengan benar.</p>
+
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Form Laporan Sampah</h5>
+                    </div>
+                    <div class="card-body">
+                        <form id="testForm" enctype="multipart/form-data">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="title">Judul Laporan *</label>
+                                        <input type="text" class="form-control" id="title" name="title" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="waste_type_id">Jenis Sampah</label>
+                                        <select class="form-control" id="waste_type_id" name="waste_type_id">
+                                            <option value="">Pilih Jenis Sampah</option>
+                                            <option value="1">Sampah Organik</option>
+                                            <option value="2">Sampah Anorganik</option>
+                                            <option value="3">Sampah B3</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="description">Deskripsi *</label>
+                                <textarea class="form-control" id="description" name="description" rows="3"
+                                    required></textarea>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="latitude">Latitude *</label>
+                                        <input type="number" step="any" class="form-control" id="latitude"
+                                            name="latitude" value="-6.2088" required>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="longitude">Longitude *</label>
+                                        <input type="number" step="any" class="form-control" id="longitude"
+                                            name="longitude" value="106.8456" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="address">Alamat</label>
+                                <input type="text" class="form-control" id="address" name="address"
+                                    value="Jakarta, Indonesia">
+                            </div>
+                            <div class="form-group">
+                                <label for="image">Foto Sampah *</label>
+                                <input type="file" class="form-control-file" id="image" name="image" accept="image/*"
+                                    required>
+                                <small class="form-text text-muted">Format: JPG, PNG, GIF. Maksimal 2MB.</small>
+                            </div>
+                            <button type="submit" class="btn btn-success">
+                                <i class="fas fa-paper-plane mr-1"></i>Kirim Laporan
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>Debug Info</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="debugInfo" class="debug-info">
+                            Menunggu...
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function updateDebugInfo(message) {
+            const timestamp = new Date().toLocaleTimeString();
+            $('#debugInfo').html(`[${timestamp}] ${message}`);
+            console.log(`[${timestamp}] ${message}`);
+        }
+
+        $('#testForm').on('submit', function (e) {
+            e.preventDefault();
+
+            const formData = new FormData(this);
+
+            // Debug form data
+            updateDebugInfo('=== FORM SUBMISSION DEBUG ===');
+            for (let [key, value] of formData.entries()) {
+                if (key === 'image') {
+                    updateDebugInfo(`${key}: ${value.name} (File size: ${value.size} bytes)`);
+                } else {
+                    updateDebugInfo(`${key}: ${value}`);
+                }
+            }
+            updateDebugInfo('=============================');
+
+            // Show loading state
+            const submitBtn = $(this).find('button[type="submit"]');
+            const originalText = submitBtn.html();
+            submitBtn.html('<i class="fas fa-spinner fa-spin mr-1"></i>Mengirim...');
+            submitBtn.prop('disabled', true);
+
+            $.ajax({
+                url: '/api/waste-reports',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                headers: {
+                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content'),
+                    'Accept': 'application/json'
+                },
+                success: function (response) {
+                    updateDebugInfo('=== SUCCESS RESPONSE ===');
+                    updateDebugInfo(JSON.stringify(response, null, 2));
+                    updateDebugInfo('=======================');
+
+                    if (response.success) {
+                        alert('✅ ' + response.message);
+                        $('#testForm')[0].reset();
+                    } else {
+                        alert('❌ ' + (response.message ||
+                        'Terjadi kesalahan yang tidak diketahui'));
+                    }
+                },
+                error: function (xhr, status, error) {
+                    updateDebugInfo('=== ERROR RESPONSE ===');
+                    updateDebugInfo(`Error: ${error}`);
+                    updateDebugInfo(`Status: ${status}`);
+                    updateDebugInfo(`Status Code: ${xhr.status}`);
+                    updateDebugInfo(`Response Text: ${xhr.responseText}`);
+                    if (xhr.responseJSON) {
+                        updateDebugInfo(
+                            `Response JSON: ${JSON.stringify(xhr.responseJSON, null, 2)}`);
+                    }
+                    updateDebugInfo('=====================');
+
+                    let errorMessage = '❌ Terjadi kesalahan. Silakan coba lagi.';
+
+                    if (xhr.responseJSON) {
+                        if (xhr.responseJSON.errors) {
+                            let errorList = [];
+                            Object.keys(xhr.responseJSON.errors).forEach(function (key) {
+                                xhr.responseJSON.errors[key].forEach(function (error) {
+                                    errorList.push(error);
+                                });
+                            });
+                            errorMessage = '❌ ' + errorList.join('\n');
+                        } else if (xhr.responseJSON.message) {
+                            errorMessage = '❌ ' + xhr.responseJSON.message;
+                        }
+                    } else if (xhr.status === 419) {
+                        errorMessage = '❌ Session expired. Silakan refresh halaman dan coba lagi.';
+                    } else if (xhr.status === 500) {
+                        errorMessage = '❌ Server error. Silakan coba lagi nanti.';
+                    }
+
+                    alert(errorMessage);
+                },
+                complete: function () {
+                    submitBtn.html(originalText);
+                    submitBtn.prop('disabled', false);
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            updateDebugInfo('Page loaded successfully');
+        });
+
+    </script>
+</body>
+
+</html>

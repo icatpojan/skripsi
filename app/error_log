@@ -1,0 +1,36 @@
+[05-Feb-2026 21:37:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/pron7255/public_html/app/District.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/District.php on line 7
+[05-Feb-2026 21:45:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/pron7255/public_html/app/WasteType.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/WasteType.php on line 7
+[05-Feb-2026 21:53:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Foundation\Auth\User' not found in /home/pron7255/public_html/app/User.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/User.php on line 10
+[05-Feb-2026 21:55:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/pron7255/public_html/app/WasteReport.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/WasteReport.php on line 7
+[05-Feb-2026 23:54:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/pron7255/public_html/app/District.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/District.php on line 7
+[05-Feb-2026 23:54:55 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/pron7255/public_html/app/District.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/District.php on line 7
+[05-Feb-2026 23:55:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/pron7255/public_html/app/District.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/District.php on line 7
+[05-Feb-2026 23:55:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/pron7255/public_html/app/District.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/District.php on line 7
+[05-Feb-2026 23:55:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Eloquent\Model' not found in /home/pron7255/public_html/app/District.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/app/District.php on line 7

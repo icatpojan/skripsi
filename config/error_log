@@ -1,0 +1,384 @@
+[05-Feb-2026 20:57:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/mail.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/mail.php on line 16
+[05-Feb-2026 20:58:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/cache.php on line 21
+[05-Feb-2026 20:58:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/queue.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/queue.php on line 16
+[05-Feb-2026 20:59:08 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/hashing.php on line 32
+[05-Feb-2026 20:59:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/session.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/session.php on line 21
+[05-Feb-2026 21:02:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/logging.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/logging.php on line 20
+[05-Feb-2026 21:03:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/database.php on line 18
+[05-Feb-2026 21:08:56 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 21:12:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/services.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/services.php on line 18
+[05-Feb-2026 21:23:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 21:24:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/filesystems.php on line 16
+[05-Feb-2026 21:35:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function resource_path() in /home/pron7255/public_html/config/view.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/view.php on line 17
+[05-Feb-2026 22:54:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/logging.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/logging.php on line 20
+[05-Feb-2026 22:54:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 22:54:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 22:54:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/database.php on line 18
+[05-Feb-2026 22:54:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 22:54:40 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/cache.php on line 21
+[05-Feb-2026 22:54:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/database.php on line 18
+[05-Feb-2026 22:54:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 22:54:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/logging.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/logging.php on line 20
+[05-Feb-2026 22:54:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/database.php on line 18
+[05-Feb-2026 22:54:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/cache.php on line 21
+[05-Feb-2026 22:54:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 22:54:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 22:54:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 22:54:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/logging.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/logging.php on line 20
+[05-Feb-2026 22:54:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/database.php on line 18
+[05-Feb-2026 22:54:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 22:54:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/cache.php on line 21
+[05-Feb-2026 22:54:58 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/database.php on line 18
+[05-Feb-2026 22:54:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 22:55:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 22:55:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 22:55:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/database.php on line 18
+[05-Feb-2026 22:55:07 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 22:55:09 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/cache.php on line 21
+[05-Feb-2026 22:55:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/database.php on line 18
+[05-Feb-2026 22:55:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/logging.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/logging.php on line 20
+[05-Feb-2026 22:55:12 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 22:55:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 22:55:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 22:55:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/database.php on line 18
+[05-Feb-2026 22:55:18 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 22:55:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/cache.php on line 21
+[05-Feb-2026 22:55:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/database.php on line 18
+[05-Feb-2026 22:55:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/logging.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/logging.php on line 20
+[05-Feb-2026 22:55:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 22:55:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 22:55:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 22:55:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/database.php on line 18
+[05-Feb-2026 22:55:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 23:54:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 23:54:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/hashing.php on line 32
+[05-Feb-2026 23:54:42 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 23:54:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/filesystems.php on line 16
+[05-Feb-2026 23:54:44 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/database.php on line 18
+[05-Feb-2026 23:54:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 23:54:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 23:54:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/cache.php on line 21
+[05-Feb-2026 23:54:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 23:54:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 23:54:52 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/filesystems.php on line 16
+[05-Feb-2026 23:54:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/database.php on line 18
+[05-Feb-2026 23:54:54 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/hashing.php on line 32
+[05-Feb-2026 23:54:57 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 23:54:59 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 23:55:00 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/cache.php on line 21
+[05-Feb-2026 23:55:01 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 23:55:02 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 23:55:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/filesystems.php on line 16
+[05-Feb-2026 23:55:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/database.php on line 18
+[05-Feb-2026 23:55:04 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/hashing.php on line 32
+[05-Feb-2026 23:55:06 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 23:55:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 23:55:10 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/cache.php on line 21
+[05-Feb-2026 23:55:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 23:55:13 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 23:55:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/database.php on line 18
+[05-Feb-2026 23:55:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/filesystems.php on line 16
+[05-Feb-2026 23:55:16 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/hashing.php on line 32
+[05-Feb-2026 23:55:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 23:55:20 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 23:55:23 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/cache.php on line 21
+[05-Feb-2026 23:55:26 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/database.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/database.php on line 18
+[05-Feb-2026 23:55:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 23:55:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[05-Feb-2026 23:55:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/hashing.php:32
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/hashing.php on line 32
+[05-Feb-2026 23:55:29 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/filesystems.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/filesystems.php on line 16
+[05-Feb-2026 23:55:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[05-Feb-2026 23:55:37 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18
+[06-Feb-2026 01:36:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/cache.php on line 21
+[06-Feb-2026 01:36:51 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[06-Feb-2026 01:47:03 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/app.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/app.php on line 16
+[06-Feb-2026 01:48:15 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/cache.php:21
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/cache.php on line 21
+[06-Feb-2026 01:48:43 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Call to undefined function env() in /home/pron7255/public_html/config/broadcasting.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/config/broadcasting.php on line 18

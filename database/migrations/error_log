@@ -1,0 +1,80 @@
+[05-Feb-2026 21:24:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2025_07_31_033200_create_waste_reports_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2025_07_31_033200_create_waste_reports_table.php on line 7
+[05-Feb-2026 21:25:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2025_08_01_000000_add_district_id_to_waste_reports_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2025_08_01_000000_add_district_id_to_waste_reports_table.php on line 7
+[05-Feb-2026 21:26:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2014_10_12_000000_create_users_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2014_10_12_000000_create_users_table.php on line 7
+[05-Feb-2026 21:27:33 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2025_07_31_033150_create_waste_types_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2025_07_31_033150_create_waste_types_table.php on line 7
+[05-Feb-2026 21:28:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2014_10_12_100000_create_password_resets_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2014_10_12_100000_create_password_resets_table.php on line 7
+[05-Feb-2026 21:29:39 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2025_01_31_000000_create_districts_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2025_01_31_000000_create_districts_table.php on line 7
+[05-Feb-2026 21:30:41 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2019_08_19_000000_create_failed_jobs_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2019_08_19_000000_create_failed_jobs_table.php on line 7
+[05-Feb-2026 21:31:46 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2025_07_31_033743_remove_role_from_users_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2025_07_31_033743_remove_role_from_users_table.php on line 7
+[05-Feb-2026 21:32:48 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2025_07_31_033242_add_username_to_users_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2025_07_31_033242_add_username_to_users_table.php on line 7
+[05-Feb-2026 21:33:49 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2025_07_31_032059_create_permission_tables.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2025_07_31_032059_create_permission_tables.php on line 7
+[06-Feb-2026 06:10:34 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2025_07_31_033200_create_waste_reports_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2025_07_31_033200_create_waste_reports_table.php on line 7
+[06-Feb-2026 06:10:35 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2025_08_01_000000_add_district_id_to_waste_reports_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2025_08_01_000000_add_district_id_to_waste_reports_table.php on line 7
+[06-Feb-2026 06:10:38 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2014_10_12_000000_create_users_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2014_10_12_000000_create_users_table.php on line 7
+[06-Feb-2026 06:10:47 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2025_07_31_033150_create_waste_types_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2025_07_31_033150_create_waste_types_table.php on line 7
+[06-Feb-2026 06:11:14 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2025_01_31_000000_create_districts_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2025_01_31_000000_create_districts_table.php on line 7
+[06-Feb-2026 06:12:19 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2014_10_12_100000_create_password_resets_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2014_10_12_100000_create_password_resets_table.php on line 7
+[06-Feb-2026 06:13:24 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2019_08_19_000000_create_failed_jobs_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2019_08_19_000000_create_failed_jobs_table.php on line 7
+[06-Feb-2026 06:14:25 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2025_07_31_033743_remove_role_from_users_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2025_07_31_033743_remove_role_from_users_table.php on line 7
+[06-Feb-2026 06:15:27 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2025_07_31_033242_add_username_to_users_table.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2025_07_31_033242_add_username_to_users_table.php on line 7
+[06-Feb-2026 06:16:30 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Migrations\Migration' not found in /home/pron7255/public_html/database/migrations/2025_07_31_032059_create_permission_tables.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/migrations/2025_07_31_032059_create_permission_tables.php on line 7

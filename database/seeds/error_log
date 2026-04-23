@@ -1,0 +1,16 @@
+[05-Feb-2026 22:10:17 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Seeder' not found in /home/pron7255/public_html/database/seeds/RolePermissionSeeder.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/seeds/RolePermissionSeeder.php on line 7
+[05-Feb-2026 22:21:36 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Seeder' not found in /home/pron7255/public_html/database/seeds/DatabaseSeeder.php:5
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/seeds/DatabaseSeeder.php on line 5
+[05-Feb-2026 22:30:53 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Seeder' not found in /home/pron7255/public_html/database/seeds/WasteTypeSeeder.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/seeds/WasteTypeSeeder.php on line 6
+[06-Feb-2026 04:08:22 Asia/Jakarta] PHP Fatal error:  Uncaught Error: Class 'Illuminate\Database\Seeder' not found in /home/pron7255/public_html/database/seeds/AdminSeeder.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/pron7255/public_html/database/seeds/AdminSeeder.php on line 9
